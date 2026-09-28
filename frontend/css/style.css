@@ -1,0 +1,973 @@
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   BODY
+========================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.main-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.header-content {
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.main-nav a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+}
+
+
+.main-nav a:hover {
+    color: #2563eb;
+}
+
+
+/* ==========================================
+   LOGOUT BUTTON
+========================================== */
+
+.logout-btn {
+    border: none;
+    background: #ef4444;
+    color: white;
+
+    padding: 9px 16px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+.logout-btn:hover {
+    background: #dc2626;
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero-section {
+    padding: 70px 0 40px;
+    text-align: center;
+}
+
+
+.hero-section h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+
+.hero-section p {
+    color: #6b7280;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   FEED
+========================================== */
+
+.feed-section {
+    padding: 30px 0 70px;
+}
+
+
+.feed-section h2 {
+    margin-bottom: 25px;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .main-nav {
+        gap: 15px;
+    }
+
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+}
+
+/* ==========================================
+   POST CARD
+========================================== */
+
+.post-card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    padding: 22px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.04);
+}
+
+
+/* ==========================================
+   POST HEADER
+========================================== */
+
+.post-header {
+    margin-bottom: 18px;
+}
+
+
+.post-author {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.post-author h3 {
+    font-size: 16px;
+
+    margin-bottom: 4px;
+}
+
+
+.post-author p {
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   POST AVATAR
+========================================== */
+
+.post-avatar,
+.post-avatar-placeholder {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+
+.post-avatar-placeholder {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+    font-size: 18px;
+}
+
+
+/* ==========================================
+   POST CONTENT
+========================================== */
+
+.post-content {
+    margin-bottom: 18px;
+}
+
+
+.post-content p {
+    line-height: 1.6;
+
+    white-space: pre-wrap;
+}
+
+
+.post-image {
+    width: 100%;
+
+    max-height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-top: 15px;
+}
+
+
+/* ==========================================
+   POST STATS
+========================================== */
+
+.post-stats {
+    display: flex;
+
+    gap: 20px;
+
+    padding: 12px 0;
+
+    border-top: 1px solid #e5e7eb;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   POST ACTIONS
+========================================== */
+
+.post-actions {
+    display: flex;
+
+    gap: 10px;
+
+    padding-top: 10px;
+}
+
+
+.post-action-btn {
+    border: none;
+
+    background: #f3f4f6;
+
+    color: #374151;
+
+    padding: 9px 15px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+.post-action-btn:hover {
+    background: #e5e7eb;
+}
+
+/* ==========================================
+   CREATE POST CARD
+========================================== */
+
+.create-post-card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.04);
+}
+
+
+/* ==========================================
+   CREATE POST TITLE
+========================================== */
+
+.create-post-card h2 {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+
+    color: #1f2937;
+}
+
+
+/* ==========================================
+   FORM GROUP
+========================================== */
+
+.create-post-card .form-group {
+    margin-bottom: 18px;
+}
+
+
+/* ==========================================
+   LABEL
+========================================== */
+
+.create-post-card label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #374151;
+}
+
+
+.create-post-card label span {
+    color: #9ca3af;
+
+    font-weight: 400;
+}
+
+
+/* ==========================================
+   TEXTAREA
+========================================== */
+
+.create-post-card textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    resize: vertical;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+.create-post-card textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* ==========================================
+   IMAGE INPUT
+========================================== */
+
+.create-post-card input {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+.create-post-card input:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* ==========================================
+   CREATE POST BUTTON
+========================================== */
+
+.create-post-btn {
+    border: none;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.create-post-btn:hover {
+    background: #1d4ed8;
+}
+
+
+/* ==========================================
+   CREATE POST MESSAGE
+========================================== */
+
+.create-post-message {
+    min-height: 20px;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   FEED TITLE
+========================================== */
+
+.feed-title {
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .create-post-card {
+        padding: 20px;
+    }
+
+    .create-post-btn {
+        width: 100%;
+    }
+
+}
+
+/* ==========================================
+   COMMENTS SECTION
+========================================== */
+
+.comments-section {
+    margin-top: 18px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+
+/* ==========================================
+   COMMENTS HEADER
+========================================== */
+
+.comments-header {
+    margin-bottom: 15px;
+}
+
+
+.comments-header h4 {
+    font-size: 16px;
+
+    color: #1f2937;
+}
+
+
+/* ==========================================
+   COMMENT FORM
+========================================== */
+
+.comment-form {
+    margin-bottom: 20px;
+}
+
+
+.comment-input {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    resize: vertical;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+.comment-input:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* ==========================================
+   COMMENT BUTTON
+========================================== */
+
+.comment-submit-btn {
+    margin-top: 10px;
+
+    border: none;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    padding: 9px 15px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.comment-submit-btn:hover {
+    background: #1d4ed8;
+}
+
+
+/* ==========================================
+   COMMENT ITEM
+========================================== */
+
+.comment-item {
+    padding: 14px;
+
+    margin-bottom: 12px;
+
+    background: #f9fafb;
+
+    border-radius: 10px;
+
+    border: 1px solid #e5e7eb;
+}
+
+
+.comment-author {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 8px;
+}
+
+
+.comment-author strong {
+    font-size: 14px;
+
+    color: #1f2937;
+}
+
+
+.comment-author span {
+    font-size: 12px;
+
+    color: #9ca3af;
+}
+
+
+.comment-content {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #374151;
+
+    white-space: pre-wrap;
+
+    margin-bottom: 10px;
+}
+
+
+/* ==========================================
+   COMMENT ACTIONS
+========================================== */
+
+.comment-actions {
+    display: flex;
+
+    gap: 8px;
+}
+
+
+.comment-action-btn {
+    border: none;
+
+    background: transparent;
+
+    color: #2563eb;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    padding: 3px 0;
+}
+
+
+.comment-action-btn.delete {
+    color: #dc2626;
+}
+
+
+.comment-action-btn:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   EDIT COMMENT
+========================================== */
+
+.edit-comment-input {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    font-family: inherit;
+
+    resize: vertical;
+
+    outline: none;
+}
+
+
+.edit-comment-actions {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 8px;
+}
+
+
+.edit-save-btn,
+.edit-cancel-btn {
+    border: none;
+
+    padding: 7px 12px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+}
+
+
+.edit-save-btn {
+    background: #2563eb;
+
+    color: #ffffff;
+}
+
+
+.edit-cancel-btn {
+    background: #e5e7eb;
+
+    color: #374151;
+}
+
+
+/* ==========================================
+   COMMENTS MESSAGE
+========================================== */
+
+.comments-empty,
+.comments-error,
+.comments-loading {
+    color: #6b7280;
+
+    font-size: 14px;
+
+    padding: 8px 0;
+}
+
+/* ==========================================
+   POST AUTHOR LINK
+========================================== */
+
+.post-author-link {
+    color: #1f2937;
+
+    text-decoration: none;
+}
+
+
+.post-author-link:hover {
+    color: #2563eb;
+}
+
+
+
+/* ==========================================
+   GLOBAL UI POLISH
+========================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+
+button:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 768px) {
+
+    .header-content {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .main-nav {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    .hero-section {
+        padding: 45px 15px;
+    }
+
+
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+
+    .feed-section {
+        padding: 30px 15px;
+    }
+
+
+    .post-card {
+        padding: 18px;
+    }
+
+
+    .post-actions {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 100%;
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+    }
+
+
+    .logo {
+        font-size: 22px;
+    }
+
+
+    .main-nav {
+        gap: 10px;
+    }
+
+
+    .main-nav a,
+    .logout-btn {
+        font-size: 13px;
+    }
+
+
+    .hero-section h1 {
+        font-size: 24px;
+    }
+
+
+    .hero-section p {
+        font-size: 14px;
+    }
+
+
+    .post-card {
+        padding: 15px;
+
+        border-radius: 10px;
+    }
+
+
+    .post-author {
+        gap: 9px;
+    }
+
+
+    .post-avatar,
+    .post-avatar-placeholder {
+        width: 40px;
+
+        height: 40px;
+    }
+
+
+    .post-avatar-placeholder {
+        font-size: 16px;
+    }
+
+
+    .post-content p {
+        font-size: 14px;
+    }
+
+
+    .post-stats {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        font-size: 13px;
+    }
+
+
+    .post-action-btn {
+        flex: 1;
+
+        min-width: 100px;
+    }
+
+
+    .comments-section {
+        margin-top: 15px;
+    }
+
+
+    .comment-submit-btn {
+        width: 100%;
+    }
+
+}

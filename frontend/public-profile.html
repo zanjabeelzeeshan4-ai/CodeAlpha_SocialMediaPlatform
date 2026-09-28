@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Profile | CodeAlpha Social Media</title>
+
+    <link
+        rel="stylesheet"
+        href="./css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./css/profile.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+         HEADER
+    =========================================== -->
+
+    <header class="main-header">
+
+        <div class="container header-content">
+
+            <a
+                href="./index.html"
+                class="logo"
+            >
+                CodeAlpha
+            </a>
+
+
+            <nav class="main-nav">
+
+                <a href="./index.html">
+                    Home
+                </a>
+
+                <a href="./profile.html">
+                    My Profile
+                </a>
+
+                <button
+                    id="logoutBtn"
+                    class="logout-btn"
+                >
+                    Logout
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==========================================
+         PUBLIC PROFILE
+    =========================================== -->
+
+    <main>
+
+        <section class="profile-section">
+
+            <div class="container">
+
+                <div
+                    id="publicProfileMessage"
+                    class="profile-message"
+                ></div>
+
+
+                <div class="profile-card">
+
+                    <div class="profile-top">
+
+                        <div
+                            id="publicProfileImage"
+                            class="profile-image-container"
+                        >
+                            Loading...
+                        </div>
+
+
+                        <div class="profile-main-info">
+
+                            <h1 id="publicProfileName">
+                                Loading...
+                            </h1>
+
+
+                            <p id="publicProfileUsername">
+                                @username
+                            </p>
+
+
+                            <p
+                                id="publicProfileBio"
+                                class="profile-bio"
+                            >
+                                Loading bio...
+                            </p>
+
+
+                            <div class="profile-stats">
+
+                                <div class="profile-stat">
+
+                                    <strong
+                                        id="publicFollowersCount"
+                                    >
+                                        0
+                                    </strong>
+
+                                    <span>
+                                        Followers
+                                    </span>
+
+                                </div>
+
+
+                                <div class="profile-stat">
+
+                                    <strong
+                                        id="publicFollowingCount"
+                                    >
+                                        0
+                                    </strong>
+
+                                    <span>
+                                        Following
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <button
+                                id="followBtn"
+                                class="follow-btn"
+                            >
+                                Follow
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="./js/public-profile.js"></script>
+
+</body>
+
+</html>
